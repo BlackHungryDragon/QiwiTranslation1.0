@@ -34,16 +34,16 @@ if __name__ == '__main__':
     print( "\n Введитe номер телефона : ")
     number = input("  Номер : ") 
     wallet =pyqiwi.Wallet(token,number)
-    menu()
-def menu ():
-    Mdoings= """\n  Выбери действиe :
+   
+
+Mdoings= """\n  Выбери действиe :
 
   [1] - Проверить баланс
   [2] - Выполнить перевод на другой киви кошелек
   [3] - Узнать id  провайдера (телефона)
 """
-    print(Mdoings)
-    doings=int(input(" Действие : "))
+print(Mdoings)
+doings=int(input(" Действие : "))
 if doings == 1:
    balance = wallet.balance()
    print(' На балансе :',balance)
