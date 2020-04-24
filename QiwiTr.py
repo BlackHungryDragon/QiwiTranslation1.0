@@ -55,7 +55,7 @@ elif doings ==2:
     print("\n Введите комментай . Если не нужен , то омтаьте поле пустым")
     comment=input(' Коммент :')
     transfer=wallet.qiwi_transfer(account, amount, comment)
-    print(" Платеж успешно отправлен",trasfer)
+    print(" Платеж успешно отправлен",transfer)
 elif doings ==3:
     print ( "\n  Напиши номер у которого хочешь узнать айди ")
     phone =input(' Номер : ')
