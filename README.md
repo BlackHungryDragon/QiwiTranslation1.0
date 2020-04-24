@@ -14,5 +14,6 @@ cd QiwiTranslation1.0
 #Клонируем библиотеки 
 pip3 install -r requirements.txt
 
-#Запускаем утилиту 
+#Запускаем утилиту  и действуйте по инструкции в утилите :)
  python3 QiwiTr.py
+
