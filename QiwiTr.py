@@ -61,10 +61,4 @@ elif doings ==3:
     phone =input(' Номер : ')
     deteck= pyqiwi.detect_mobile(phone)
     print (deteck)
-elif doings ==4:
-   print ('\n Загрузка разработки ')
-   accoint=input(' Номер : ')
-   print ('\n  Сумма платежа : ')
-   amount =input('  Сумма :')
-   mobile= wallet.mobile(account, amount)
-   print(mobile)
+
