@@ -1,6 +1,10 @@
 # QiwiTranslation1.0
 Пользование киви кошельком с помощью токена 
 
+Киви токен можно узнать от сюда qiwi.com/api
+
+
+
 #Клонием репоризиторию с гита 
 git clone https://github.com/BlackHungryDragon/QiwiTranslation1.0
 
