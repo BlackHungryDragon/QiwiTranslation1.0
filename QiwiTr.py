@@ -44,7 +44,7 @@ def menu ():
 """
     print(Mdoings)
     doings=int(input(" Действие : "))
-    if doings == 1:
+if doings == 1:
    balance = wallet.balance()
    print(' На балансе :',balance)
 elif doings ==2:
