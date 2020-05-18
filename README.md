@@ -9,7 +9,7 @@
 
 
 
-#Клонием репоризиторию с гита 
+#Клонируем репоризиторию с гита 
 git clone https://github.com/BlackHungryDragon/QiwiTranslation1.0
 
 #Переходим в папку 
