@@ -1,4 +1,5 @@
-import  pyqiwi,os
+from SimpleQIWI import *
+import os,pyqiwi
 from  colorama import Fore ,Back ,Style
 
 banner = """
@@ -31,11 +32,9 @@ if __name__ == '__main__':
     print("Для того,чтобы воспользоватся функионалом программы ,необходимо авторизироваться")
     print("\n Введите токен :")
     token= input(" Токен : ")
-    print( "\n Введитe номер телефона : ")
+    print( "\n Введитп номер телефона : ")
     number = input("  Номер : ") 
-    wallet =pyqiwi.Wallet(token,number)
-   
-
+    
 Mdoings= """\n  Выбери действиe :
 
   [1] - Проверить баланс
@@ -45,20 +44,20 @@ Mdoings= """\n  Выбери действиe :
 print(Mdoings)
 doings=int(input(" Действие : "))
 if doings == 1:
-   balance = wallet.balance()
-   print(' На балансе :',balance)
+   api = QApi(token=token, phone=number)
+   print(' На балансе :',api.balance)
 elif doings ==2:
-    print("\n Введите номер киви кошелька")
-    account=input(" Номер : ")
-    print("\n Введите сумму платежа ")
-    amount= input("  Сумма :")
-    print("\n Введите комментай . Если не нужен , то омтаьте поле пустым")
-    comment=input(' Коммент :')
-    transfer=wallet.qiwi_transfer(account, amount, comment)
-    print(" Платеж успешно отправлен",transfer)
+    api = QApi(token=token, phone=number)
+    print("\n Введите номер получателя (киви кошелек)")
+    phone=input(' Номер : ')
+    print(Fore.WHITE+' Введите сумму.')
+    sum=input(' Сумма :')
+    comm=input(' Комментарий :')
+    api.pay(account=phone, amountsu=m, comment=comm)
+    time.sleep(2)
+    print(' Успешно выполнен перевод .Ваш баланс : ', api.balance)
 elif doings ==3:
     print ( "\n  Напиши номер у которого хочешь узнать айди ")
     phone =input(' Номер : ')
     deteck= pyqiwi.detect_mobile(phone)
     print (deteck)
-
