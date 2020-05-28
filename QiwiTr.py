@@ -15,11 +15,9 @@ banner = """
 """ 
 
 ######################################
-#    Coder:HungrDragon   #    
- #      Telegram :@HundrDragon #                           #
+#    Coder:Naruto Uzumaki  #    
+ #      Telegram :@Naruto1Uzumakii  #                        #
 ######################################
-# Программа еще не доработана #
- # # # # # # # # # # # # # # # 
 def clear ():
         if os.name == 'nt':
                 _ = os.system ('cls')
